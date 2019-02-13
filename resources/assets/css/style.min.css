@@ -1,0 +1,223 @@
+.view,
+body,
+html {
+    height: 100%
+}
+
+@media (max-width:740px) {
+    .full-page-intro {
+        height: 1000px
+    }
+}
+
+.carousel {
+    height: 50%
+}
+
+.carousel .carousel-inner,
+.carousel .carousel-inner .active,
+.carousel .carousel-inner .carousel-item {
+    height: 100%
+}
+
+@media (max-width:776px) {
+    .carousel {
+        height: 100%
+    }
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, .3)
+}
+
+.page-footer,
+.top-nav-collapse {
+    background-color: #1C2331
+}
+
+@media only screen and (max-width:768px) {
+    .navbar {
+        background-color: #1C2331
+    }
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 17px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    display: none;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 26px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: green;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.panel {
+    color: #666;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+}
+.label-info {
+    background: #63bbb2;
+}
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    color: #fff;
+    border-radius: .25em;
+}
+.switcher-container input {
+    display: none;
+}
+.switcher-container .switcher.danger {
+    border: 1px solid #e85656;
+    background-color: #F0F3F4;
+}
+.switcher-container .switcher {
+    position: relative;
+    display: inline-block;
+    width: 84px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-sizing: border-box;
+    -webkit-transform: translateZ(0);
+}
+.switcher-container .switcher .handle-container {
+    position: relative;
+    width: 126px;
+    cursor: pointer;
+    -webkit-transform: translate3d(-42px,0,0);
+    transform: translate3d(-42px,0,0);
+    transition: -webkit-transform .2s linear;
+    transition: transform .2s linear;
+    transition: transform .2s linear,-webkit-transform .2s linear;
+}
+.switcher-container .switcher.danger .handle.handle-on {
+    background-color: #e85656;
+}
+.switcher-container .switcher .handle-container .handle {
+    width: 42px;
+    float: left;
+    line-height: 28px;
+    height: 28px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+.switcher-container .switcher .handle-container .handle {
+    width: 42px;
+    float: left;
+    line-height: 28px;
+    height: 28px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+.switcher-container .switcher .handle-container .handle.handle-off {
+    background: #d6d6d6;
+    color: #000;
+}
+.switcher-container .switcher .handle-container .handle {
+    width: 42px;
+    float: left;
+    line-height: 28px;
+    height: 28px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+.content-top {
+    padding-top: 13px;
+    padding-bottom: 27px;
+}
+h1.al-title {
+    font-weight: 700;
+    color: #666;
+    float: left;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    opacity: .9;
+}
+.breadcrumb {
+    background: 0 0;
+    color: #666;
+    padding: 11px 0 0;
+    margin: 0;
+    float: right;
+}
+.al-content {
+    padding: 8px 32px 8px 40px;
+}
+.panel-title {
+    margin-top: 0;
+    font-size: 20px;
+}
+.panel-heading {
+    padding: 10px 15px;
+}
+.panel>.panel-body {
+    padding: 15px 22px;
+    height: 100%;
+}
+.panel.medium-panel {
+    height: 400px;
+}
+.table>tbody>tr>td {
+    padding: 0 8px;
+    line-height: 35px;
+    border-top: 1px solid #dcdcdc;
+    vertical-align: middle;
+}
+.table>tbody>tr>td:first-child{
+    text-align: center;
+    
+}
+.table>thead>tr>th:first-child {
+    text-align: center;
+}

@@ -1,0 +1,323 @@
+html,
+body,
+header,
+.view {}
+
+@media (max-width: 740px) {
+
+    html,
+    body,
+    header,
+    .view {}
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+
+    html,
+    body,
+    header,
+    .view {}
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #1C2331 !important;
+    }
+}
+
+.dropdown .dropdown-menu .dropdown-item:active,
+.dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #2E2E2E !important;
+}
+/* LOGIN -- LOGIN -- LOGIN */
+.log-form-body {
+    background-image: url('../img/background_login.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-login {
+    background-color: #000000a8;
+    color : white;
+}
+
+.form-control-log{
+    color: white;
+}
+
+.form-control-log:focus{
+    color: white;
+    border-bottom: 1px solid #ffffff;
+}
+
+.form-keepCo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.log-btn{
+    flex-direction: row;
+    justify-content: right;  
+}
+.mdp-oublie{
+    color : white;
+}
+
+/* PARTIE BADGE RESTRICTION CONFIGURATION*/
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #428bca;
+}
+.areaNameConfig:hover{
+    box-shadow: 2px 2px 7px 3px #428bca;
+}
+
+.areaNameConfig:active {
+    background-color: #428bca;
+    box-shadow: 2px 2px 7px 3px #428bca;
+}
+#exTab1 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  #exTab2 h3 {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  /* remove border radius for the tab */
+  
+  #exTab1 .nav-pills > li > a {
+    border-radius: 0;
+  }
+  
+  /* change border radius for the tab , apply corners on top*/
+  
+  #exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0 ;
+  }
+  
+  #exTab3 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  .form-semainier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+/*PARTIE TABLEAU DE BORD*/
+@media (min-width: 1080px) {
+    .al-content {
+        padding: 8px 20px 8px 20px;
+    } 
+}
+.dispo-dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.historic-card{
+    width: 70%;
+    margin-left: 15px;
+} 
+@media (max-width: 1080px) {
+    .dispo-dashboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .porte-card {
+        margin-bottom : 15px;
+    }
+    .historic-card{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .al-content {
+        padding: 8px 20px 8px 20px;
+    } 
+}
+@media (max-width: 450px) {
+    .al-content {
+        padding: 1px 1px 1px 1px;
+    }
+}
+/* The switch - the box around the slider */
+.btn-default.btn-on-1 {
+   padding-left: 12px;
+   padding-right: 12px; 
+   background-color: white !important;
+   color: black !important;
+}
+
+.btn-default.btn-off-1 {
+   padding-left: 12px;
+   padding-right: 12px;
+   background-color: white !important;
+   color: black !important; 
+}
+
+.btn-default.btn-on-1.active {
+    background-color: #5BB75B !important;
+    color: white !important;
+}
+
+.btn-default.btn-off-1.active {
+    background-color: #DA4F49 !important;
+    color: white !important;
+}
+
+input[type=radio]{
+    display: none;
+}
+
+.label-info {
+    background: #63bbb2;
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    color: #fff;
+    border-radius: .25em;
+}
+
+.content-top {
+    padding-top: 13px;
+    padding-bottom: 27px;
+}
+
+h1.al-title {
+    font-weight: 700;
+    color: #666;
+    float: left;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    opacity: .9;
+}
+
+.breadcrumb {
+    background: 0 0;
+    color: #666;
+    padding: 11px 0 0;
+    margin: 0;
+    float: right;
+}
+
+
+
+.panel {
+    color: #666;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .25);
+}
+
+.panel-title {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.panel-heading {
+    padding: 10px 15px;
+}
+
+.panel > .panel-body {
+    padding: 15px 22px;
+    height: 100%;
+}
+
+.panel.medium-panel {
+    height: 400px;
+}
+
+.table > tbody > tr > td {
+    padding: 0 8px;
+    line-height: 35px;
+    border-top: 1px solid #dcdcdc;
+    vertical-align: middle;
+}
+
+.table > tbody > tr > td:first-child {
+    text-align: center;
+}
+
+.table > thead > tr > th:first-child {
+    text-align: center;
+}
+
+table.table td,
+table.table th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* PARTIE GESTION UTILISATEUR */
+.addNew:hover {
+    transform: scale(1.1);
+}
+
+.admin {
+    border: none;
+    padding: 0;
+    margin: 5px;
+
+}
+
+.admin p {
+    word-wrap: break-word;
+}
+
+.admin:hover {
+    transform: scale(1.1);
+}
+
+.btn-warning {
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    width: 370px;
+}
+
+/* PARTIE RESTRICTION DES BADGES */
+
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+    background-color: #63bbb2;
+}
+
+.nav-tabs .nav-item .nav-link {
+    border-radius: .25rem;
+    background-color: #209e91;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    justify-content: center;
+    display: flex;
+}
+
+h3{
+    margin-top: .5rem;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #63bbb2;
+}

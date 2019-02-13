@@ -1,0 +1,16 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Salle extends Model
+{
+    public $timestamps = false;
+    
+    protected $table = 'od_salle';
+
+    protected $fillable = [
+        'nom', 'zone_id'
+    ];
+}

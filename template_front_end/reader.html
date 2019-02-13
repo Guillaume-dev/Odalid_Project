@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Lecteur</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+  #odalid {
+    padding: 1%;
+  }
+    html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
+
+    @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 1000px;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 650px;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+
+  </style>
+</head>
+
+<body>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  ...
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark primary-color scrolling-navbar">
+    <div class="container">
+
+      <!-- Collapse -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"><i class="fa fa-tachometer" aria-hidden="true"></i>Tableau de bord
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="user.html" target="_blank"><i class="fa fa-user" aria-hidden="true"></i>Utilisateurs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="badge.html" target="_blank"><i class="fa fa-id-card" aria-hidden="true"></i>Badges</a>
+          </li>
+          <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-building" aria-hiddénite="true"></i>Infrastructure</a></a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Zones</a>
+                    <a class="dropdown-item" href="#">Salles</a>
+                    <a class="dropdown-item" href="#">Portes</a>
+                    <a class="dropdown-item" href="#">Lecteurs</a>
+                    <a class="dropdown-item" href="#">Gaches</a>
+                </div>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="historic.html" target="_blank"><i class="fa fa-clock-o" aria-hidden="true"></i></i>Historique</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="system.html" target="_blank"><i class="fa fa-cog" aria-hidden="true"></i>Systeme</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+
+          <a class="navbar-brand border border-light rounded nav-flex-icons" href="http://odalid.com/fr" target="_blank" id="odalid">
+            <strong>Odalid</strong>
+          </a>
+
+
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Full Page Intro -->
+  <div class="view full-page-intro" style="background-image: url('img/fond2.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+      <!-- Content -->
+      <div class="container-fluid">
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+
+          <!--Grid column-->
+
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-12 col-xl-10 mb-4 mx-auto">
+            <button class="btn btn-info flex"><i class="fa fa-cube" aria-hidden="true"></i> Ajouter une lecteur</button>
+
+            <!--Card-->
+            <div class="card">
+
+              <!--Card content-->
+              <div class="card-body">
+
+                <!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-justified indigo" role="tablist">
+      <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#panel5" role="tab">Lecteur 1</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#panel6" role="tab"> Lecteur 2</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#panel7" role="tab"> Lecteur 3</a>
+      </li>
+  </ul>
+  <!-- Tab panels -->
+  <div class="tab-content">
+      <!--Panel 1-->
+      <div class="tab-pane fade in show active" id="panel5" role="tabpanel">
+          <br>
+          <ul>
+            <li>Données Lecteur 1</li>
+            <li>Données Lecteur 1</li>
+            <li>Données Lecteur 1</li>
+            <li>Données Lecteur 1</li>
+          </ul>
+          <ul>
+            <li>Données Lecteur 1</li>
+            <li>Données Lecteur 1</li>
+            <li>Données Lecteur 1</li>
+            <li>Données Lecteur 1</li>
+          </ul>
+          <ul>
+            <li>Données Lecteur 1</li>
+            <li>Données Lecteur 1</li>
+            <li>Données Lecteur 1</li>
+            <li>Données Lecteur 1</li>
+          </ul>
+      </div>
+      <!--/.Panel 1-->
+      <!--Panel 2-->
+      <div class="tab-pane fade" id="panel6" role="tabpanel">
+          <br>
+          <ul>
+            <li>Données Lecteur 2</li>
+            <li>Données Lecteur 2</li>
+            <li>Données Lecteur 2</li>
+            <li>Données Lecteur 2</li>
+          </ul>
+          <ul>
+            <li>Données Lecteur 2</li>
+            <li>Données Lecteur 2</li>
+            <li>Données Lecteur 2</li>
+            <li>Données Lecteur 2</li>
+          </ul>
+          <ul>
+            <li>Données Lecteur 2</li>
+            <li>Données Lecteur 2</li>
+            <li>Données Lecteur 2</li>
+            <li>Données Lecteur 2</li>
+          </ul>
+      </div>
+      <!--/.Panel 2-->
+      <!--Panel 3-->
+      <div class="tab-pane fade" id="panel7" role="tabpanel">
+          <br>
+          <ul>
+            <li>Données Lecteur 3</li>
+            <li>Données Lecteur 3</li>
+            <li>Données Lecteur 3</li>
+            <li>Données Lecteur 3</li>
+          </ul>
+          <ul>
+            <li>Données Lecteur 3</li>
+            <li>Données Lecteur 3</li>
+            <li>Données Lecteur 3</li>
+            <li>Données Lecteur 3</li>
+          </ul>
+          <ul>
+            <li>Données Lecteur 3</li>
+            <li>Données Lecteur 3</li>
+            <li>Données Lecteur 3</li>
+            <li>Données Lecteur 3</li>
+          </ul>
+      </div>
+      <!--/.Panel 3-->
+  </div>
+              </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+      <!-- Content -->
+
+    </div>
+    <!-- Mask & flexbox options-->
+
+  </div>
+  <!-- Full Page Intro -->
+
+
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>

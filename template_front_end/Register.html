@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .view {
+      height: 100%;
+    }
+
+    @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 1000px;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 650px;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+          /* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+  </style>
+</head>
+
+<body>
+
+
+
+  <!-- Full Page Intro -->
+  <div class="view full-page-intro" style="background-image: url('img/fond1f.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+      <!-- Content -->
+      <div class="container">
+
+        <!--Grid row-->
+        <div class="row wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-md-6 mb-4 white-text text-center text-md-left">
+
+            <h1 class="display-4 font-weight-bold"> Odalid </h1>
+
+            <hr class="hr-light">
+
+
+
+            <p class="mb-4 d-none d-md-block">
+              <strong>ODALID conçoit, fabrique et commercialise des équipements électroniques pour l'identification,
+                la sécurisation et la traçabilité. Spécialisée dans le développement de lecteurs/encodeurs sans contact,
+                 notre société propose des solutions RFID innovantes. Aujourd’hui grâce à notre avancée technologique,
+                  ODALID est le partenaire qui vous garantit une solution RFID adaptée.
+                Notre projet d’entreprise a été lauréat au « concours national de création d’entreprise innovantes 2008 » BPI,
+                 et est soutenu par l’incubateur régional de bourgogne PREMICE et le Conseil Régional de Bourgogne.
+                  ODALID est formé d’ingénieurs en électronique et informatique spécialisés dans la conception de systèmes embarqués.
+                   Notre métier : « vous faire profiter et vous doter des équipements d’identification les plus innovants basés sur la RFID »</strong>
+            </p>
+
+            <a target="_blank" href="http://odalid.com/fr" class="btn btn-primary btn-lg"> Notre Site Web
+              <i class="fa fa-globe" aria-hidden="true"></i>
+            </a>
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 col-xl-5 mb-4">
+
+            <!--Card-->
+            <div class="card">
+
+              <!--Card content-->
+              <div class="card-body">
+
+                <!-- Form -->
+                <!-- Material form register -->
+                  <form>
+                      <p class="h4 text-center mb-4">Se connecter</p>
+
+                      <!-- Material input email -->
+                      <div class="md-form">
+                          <i class="fa fa-envelope prefix grey-text"></i>
+                          <input type="email" id="materialFormRegisterEmailEx" class="form-control">
+                          <label for="materialFormRegisterEmailEx">Email</label><br>
+                      </div>
+
+                      <!-- Material input password -->
+                      <div class="md-form">
+                          <i class="fa fa-lock prefix grey-text"></i>
+                          <input type="password" id="materialFormRegisterPasswordEx" class="form-control">
+                          <label for="materialFormRegisterPasswordEx">Mot de Passe</label><br>
+                      </div>
+                      <!-- Rectangular switch -->
+                      <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"> </span>
+                      </label><p class="text-right">Rester connecté</p>
+
+                      <div class="text-center mt-4">
+                          <button class="btn btn-primary" type="submit">Valider</button> <br><br>
+                          <a href="email.html"><p class="font-weight-bold text-right">Mot de passe oublié?</p></a>
+                      </div>
+                  </form>
+<!-- Material form register -->
+                <!-- Form -->
+
+              </div>
+
+            </div>
+            <!--/.Card-->
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </div>
+      <!-- Content -->
+
+    </div>
+    <!-- Mask & flexbox options-->
+
+
+
+      <!--/.Copyright-->
+
+
+  </div>
+  <!-- Full Page Intro -->
+
+  <!--Main layout-->
+
+  <!--Main layout-->
+
+  <!--Footer-->
+
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+</body>
+
+</html>
